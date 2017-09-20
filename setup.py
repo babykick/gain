@@ -18,7 +18,7 @@ setup(
         'aiohttp',
         'pyquery',
         'aiofiles',
-        'parsel'
+        'parsel',
     ],
     license='GNU GPL 3',
     packages=find_packages(),
