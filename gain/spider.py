@@ -15,7 +15,7 @@ except ImportError:
     pass
 
 
-class Spider:
+class Spider(object):
     start_url = ''
     base_url = None
     parsers = []

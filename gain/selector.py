@@ -4,7 +4,7 @@ from lxml import etree
 from pyquery import PyQuery as pq
 
 
-class Selector:
+class Selector(object):
     def __init__(self, rule, attr=None):
         self.rule = rule
         self.attr = attr
