@@ -32,7 +32,5 @@ class Xpath(Selector):
 
 class Regex(Selector):
     def parse_detail(self, html):
-        try:
-            return re.findall(self.rule, html)[0]
-        except IndexError:
-            return None
+        sel = parsel.Selector(html)
+        return sel.re(self.rule)
